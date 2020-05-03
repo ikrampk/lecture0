@@ -1,14 +1,35 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
     <title>Tables</title>
+    <style>
+      #customers {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 50%;
+}
+
+#customers td, #customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4CAF50;
+  color: white;
+}
+    </style>
   </head>
   <body>
-    <table  border="2">
-
-
+    <table id="customers">
       <th>First Name</th>
       <th>Second Name </th>
       <th>Department</th>
@@ -21,6 +42,21 @@
         <td>Abubakr</td>
         <td>Siddeeq</td>
         <td>First Caliph</td>
+      </tr>
+      <tr>
+        <td>Umar</td>
+        <td>Bin Khattab</td>
+        <td>Second Caliph</td>
+      </tr>
+      <tr>
+        <td>Usman</td>
+        <td>Bin Affan</td>
+        <td>Third Caliph</td>
+      </tr>
+      <tr>
+        <td>Ali</td>
+        <td>Karamullah Wajho</td>
+        <td>Fourth Caliph</td>
       </tr>
     </table>
   </body>
